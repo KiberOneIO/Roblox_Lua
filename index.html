@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ответы на вопросы по Roblox Lua</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      margin: 0;
+      padding: 20px;
+      min-height: 100vh;
+    }
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      background: #fff;
+      padding: 30px 40px;
+      border-radius: 15px;
+      box-shadow: 0 20px 50px rgba(0,0,0,0.3);
+    }
+    h1 {
+      color: #4a3f8f;
+      text-align: center;
+      margin-bottom: 10px;
+    }
+    .subtitle {
+      text-align: center;
+      color: #888;
+      margin-bottom: 30px;
+      font-size: 14px;
+    }
+    label {
+      display: block;
+      margin-bottom: 8px;
+      font-weight: 600;
+      color: #333;
+      font-size: 15px;
+    }
+    input[type="text"],
+    textarea {
+      width: 100%;
+      padding: 10px 12px;
+      border: 2px solid #ddd;
+      border-radius: 8px;
+      font-size: 14px;
+      font-family: inherit;
+      transition: border-color 0.3s;
+      margin-bottom: 20px;
+      resize: vertical;
+    }
+    input[type="text"]:focus,
+    textarea:focus {
+      outline: none;
+      border-color: #667eea;
+    }
+    textarea { min-height: 70px; }
+    .question {
+      background: #f7f7fc;
+      padding: 15px;
+      border-radius: 10px;
+      margin-bottom: 20px;
+      border-left: 4px solid #667eea;
+    }
+    .question-text {
+      font-weight: 600;
+      color: #333;
+      margin-bottom: 12px;
+      white-space: pre-wrap;
+      font-family: 'Consolas', monospace;
+      font-size: 14px;
+      line-height: 1.5;
+    }
+    .section-title {
+      font-size: 13px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: #764ba2;
+      margin: 25px 0 15px;
+      border-bottom: 1px dashed #ccc;
+      padding-bottom: 5px;
+    }
+    button {
+      width: 100%;
+      padding: 15px;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: #fff;
+      border: none;
+      border-radius: 10px;
+      font-size: 17px;
+      font-weight: 700;
+      cursor: pointer;
+      transition: transform 0.2s, box-shadow 0.2s;
+      margin-top: 10px;
+    }
+    button:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 10px 25px rgba(102,126,234,0.4);
+    }
+    button:disabled {
+      opacity: 0.6;
+      cursor: not-allowed;
+      transform: none;
+    }
+    .success {
+      display: none;
+      text-align: center;
+      padding: 40px 20px;
+    }
+    .success h2 { color: #4CAF50; }
+    .success p { color: #666; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <form id="quizForm" action="https://formsubmit.co/shura-zab94@mail.ru" method="POST">
+      <!-- Настройки FormSubmit -->
+      <input type="hidden" name="_subject" value="Ответы на вопросы по Roblox Lua">
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_template" value="table">
+      <input type="text" name="_honey" style="display:none">
+
+      <h1>📝 Ответы на вопросы</h1>
+      <p class="subtitle">Roblox Lua — тестирование знаний</p>
+
+      <div class="section-title">👤 Данные ученика</div>
+
+      <label for="firstName">Имя *</label>
+      <input type="text" id="firstName" name="Имя" required placeholder="Введите имя">
+
+      <label for="lastName">Фамилия *</label>
+      <input type="text" id="lastName" name="Фамилия" required placeholder="Введите фамилию">
+
+      <div class="section-title">❓ Вопросы</div>
+
+      <!-- Вопрос 1 -->
+      <div class="question">
+        <div class="question-text">1. print — это — ?</div>
+        <textarea name="Вопрос 1" required></textarea>
+      </div>
+
+      <!-- Вопрос 2 -->
+      <div class="question">
+        <div class="question-text">2. Переменная — это?</div>
+        <textarea name="Вопрос 2" required></textarea>
+      </div>
+
+      <!-- Вопрос 3 -->
+      <div class="question">
+        <div class="question-text">3. wait — это?</div>
+        <textarea name="Вопрос 3" required></textarea>
+      </div>
+
+      <!-- Вопрос 4 -->
+      <div class="question">
+        <div class="question-text">4. Что будет делать эта команда: artem - Instance.new("Part", workspace)?</div>
+        <textarea name="Вопрос 4" required></textarea>
+      </div>
+
+      <!-- Вопрос 5 -->
+      <div class="question">
+        <div class="question-text">5. Что будет делать эта команда: Cube.Size = Vector3.new(50,50,50)?</div>
+        <textarea name="Вопрос 5" required></textarea>
+      </div>
+
+      <!-- Вопрос 6 -->
+      <div class="question">
+        <div class="question-text">6. Что будет делать эта команда: Cube.Position = Vector3.new(0,100,0)?</div>
+        <textarea name="Вопрос 6" required></textarea>
+      </div>
+
+      <!-- Вопрос 7 -->
+      <div class="question">
+        <div class="question-text">7. Что будет делать эта команда: Cube.Anchored = true?</div>
+        <textarea name="Вопрос 7" required></textarea>
+      </div>
+
+      <!-- Вопрос 8 -->
+      <div class="question">
+        <div class="question-text">8. Что будет делать эта команда: Cube.BrickColor = BrickColor.Random()?</div>
+        <textarea name="Вопрос 8" required></textarea>
+      </div>
+
+      <!-- Вопрос 9 -->
+      <div class="question">
+        <div class="question-text">9. Цикл с предусловием — что это?</div>
+        <textarea name="Вопрос 9" required></textarea>
+      </div>
+
+      <!-- Вопрос 10 -->
+      <div class="question">
+        <div class="question-text">10. Цикл с постусловием — что это?</div>
+        <textarea name="Вопрос 10" required></textarea>
+      </div>
+
+      <!-- Вопрос 11 -->
+      <div class="question">
+        <div class="question-text">11. Что будет делать следующая программа?
+Cube = Instance.new("Part", workspace)
+Cube.Size = Vector3.new(50,50,50)
+Cube.Position = Vector3.new(0,100,0)
+Cube.Anchored = true
+while true do
+    Cube.BrickColor = BrickColor.Random()
+    wait(1)
+end</div>
+        <textarea name="Вопрос 11" required></textarea>
+      </div>
+
+      <button type="submit" id="submitBtn">Отправить ответы</button>
+    </form>
+
+    <div class="success" id="successMsg">
+      <h2>✅ Ответы отправлены!</h2>
+      <p>Спасибо! Ваши ответы успешно отправлены на почту преподавателя.</p>
+    </div>
+  </div>
+
+  <script>
+    // Простейшая валидация + индикация отправки
+    const form = document.getElementById('quizForm');
+    const btn = document.getElementById('submitBtn');
+
+    form.addEventListener('submit', function () {
+      btn.disabled = true;
+      btn.textContent = 'Отправка...';
+    });
+  </script>
+</body>
+</html>
